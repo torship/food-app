@@ -15,14 +15,14 @@ export default function FoodCard({ item, onAddToCart }) {
         </h4>
         <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm text-center leading-relaxed">
           {item.description}
-        </p>
+        </p> 
         <div className="flex justify-between items-center">
-          <span className="text-2xl font-bold text-orange-600 dark:text-orange-400">
+          <span className="text-2xl font-bold text-sky-400 dark:text-sky-400">
             ${item.price}
           </span>
           <button
             onClick={() => onAddToCart(item)}
-            className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg transition-all duration-200 flex items-center space-x-2 font-medium shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95"
+            className="bg-yellow-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg transition-all duration-200 flex items-center space-x-2 font-medium shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95"
           >
             <span>+</span>
             <span>Add to Cart</span>
